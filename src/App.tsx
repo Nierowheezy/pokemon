@@ -76,7 +76,7 @@ const App = () => {
     <>
       <Router>
         <Routes>
-          <Route path="/" element={<Main allPokemons={allPokemons} setSearchValue={setSearchValue} searchPokemon={searchPokemon} gotoPrevPage={prevPageUrl ? gotoPrevPage : null} gotoNextPage={nextPageUrl ? gotoNextPage : null} getAllPokemons={getAllPokemons} />} />
+          <Route path="/" element={<Main allPokemons={allPokemons} setSearchValue={setSearchValue} searchPokemon={searchPokemon} gotoPrevPage={prevPageUrl ? gotoPrevPage : null} gotoNextPage={nextPageUrl ? gotoNextPage : null} getAllPokemons={getAllPokemons} nextPageUrl={nextPageUrl} prevPageUrl={prevPageUrl} />} />
           <Route path="/:name" element={<PokemonDetails />} />
         </Routes>
       </Router>
