@@ -1,46 +1,34 @@
-# Getting Started with Create React App
+# Welcome to Pokemon Web App!
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# This is a pokemon web app built with react and https://pokeapi.co api
 
-## Available Scripts
+1.  Axios was used to fetch data from the api
+2.  React Route was used for navigating to the details page
 
-In the project directory, you can run:
+# Files / Folder Structure
 
-### `npm start`
+----src
+-----components
+-------PokemonDetails
+-------PokemonList
+-------utils
+-----App.tsx
+-----Index.css
+-----Main.tsx
+--.gitignore
+--.gitignore
+--.package.json
+--.README.md
+--.tsconfig.json
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Details of the files and folders
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+App.tsx is entry point of my application. The Main.tsx is rendered inside the App.tsx.
 
-### `npm test`
+1.  The api call is done inside the App.tsx
+2.  React router was implemented inside the App.tsx
+3.  Props were passed into the Main.tsx from the App.tsx file
+4.  The components folder consists of some of the components used in the application : PokemonDetails,PokemonList and the utils folder
+5.  The utils folder contains the Loader and Pagination component.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+# Run Project

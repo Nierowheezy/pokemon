@@ -1,8 +1,9 @@
 import PokemonList from './components/PokemonList/PokemonList';
+import Pagination from './components/utils/Pagination/Pagination';
 
 const Main = (props: any) => {
 
-    const { allPokemons, gotoNextPage, gotoPrevPage, searchPokemon, setSearchValue } = props
+    const { allPokemons, gotoNextPage, gotoPrevPage, searchPokemon, setSearchValue, nextPageUrl, prevPageUrl } = props
 
     return (
         <div className="app-contaner">
@@ -20,8 +21,12 @@ const Main = (props: any) => {
                             type={pokemonStats.types[0].type.name}
                         />)}
                 </div>
-                {gotoPrevPage && <button className="load-more" onClick={() => gotoPrevPage()}>previous</button>}
-                {gotoNextPage && <button className="load-more" onClick={() => gotoNextPage()}>Next</button>}
+                {/* {gotoPrevPage && <button className="load-more" onClick={() => gotoPrevPage()}>previous</button>}
+                {gotoNextPage && <button className="load-more" onClick={() => gotoNextPage()}>Next</button>} */}
+                <Pagination
+                    gotoNextPage={nextPageUrl ? gotoNextPage : null}
+                    gotoPrevPage={prevPageUrl ? gotoPrevPage : null}
+                />
 
 
             </div>
